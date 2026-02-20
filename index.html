@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <audio id="bg-music" loop>
+        <source src="mundo.mp3" type="mpeg">
+    </audio>
+</head>
+<body>
+
+    <div id="heart-container"></div>
+
+    <div id="lock-screen">
+        <div class="glass-card">
+            <div class="lock-icon"><span class="heart-pulse">❤️</span></div>
+            <h2>Yours, Truly.</h2>
+            <p>A small piece of my heart, for the one who holds the key.</p>
+            <div class="input-group">
+                <input type="password" id="password-input" placeholder="Enter our anniversary to unlock...">
+            </div>
+            <button class="unlock-btn" onclick="CheckPassword()">OPEN GIFT</button>
+            <p id="error-msg" class="error-text" style="display: none;">That's not it, try again...</p>
+        </div>
+    </div>
+
+    <div id="envelope-overlay" style="display: none;">
+        <div class="envelope-wrapper" onclick="OpenEnvelope()">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="letter">
+                    <div class="heart-inside">❤️</div>
+                </div>
+            </div>
+            <p id="typewriter-text"></p>
+            <p class="envelope-text">Click to Open Your Gift</p>
+        </div>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <header>
+            <p class="to-text">TO MY FOREVER FAVORITE, BEBE</p>
+            <h1>Happy 5th Monthsary</h1>
+            <p class="sub-heading">to the most beautiful person ever</p>
+            <p class="scroll-instruction">SCROLL DOWN TO SEE OUR BEST TIMES TOGETHER...</p>
+        </header>
+        <br>
+        <br>
+        <br>
+        <section class="gallery">
+            <div class="memory-item left">
+                <img src="pic.png" alt="pic">
+                <div class="memory-text">
+                    <h3>Where it started</h3>
+                    <p>Remember this, inaya mo ako mag CODM na akala ko hanggang doon pero may mas hihigit pa pala.<br> </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="memory-item right">
+                <img src="joy.png" alt="joy">
+                <div class="memory-text">
+                    <h3>Shared Joy</h3>
+                    <p>Your laughter is my favorite sound in existence.
+                        Everytime ta gid ya ga play happy gid ko ya ikaw palagi kasama ko.
+                        Kahit minsan nag kaka-tampuhan tayo HAHAHAHAH :>
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="memory-item left">
+                <img src="pic3.png" alt="pic3">
+                <div class="memory-text">
+                    <h3>Side By Side</h3>
+                    <p>I never questioned myself na piliin ka dahil I always feel home lagi pagkausap ka.
+                        Just always remember na ready ang shoulder kung need mo ng masandalan
+                        sa mga oras na against ang buong paligid sa'yo nandito ako na lagi ka iintindihin.
+                        I will always be your human pillow.
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer>
+            <div class="final-message">
+                <img src="bi.png" class="bi-icon" alt="bi">
+                <p id="typewriter-text"></p>
+                <p class="closing">You will always be my favorite person. 
+                    Thank you for letting me in your life bebe, and trusting me.
+                    ILOVEYOUSOMUCH, BABYY ❤️
+
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
